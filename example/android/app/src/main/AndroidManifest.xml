@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wegooooo.wego_mnn_example">
    <application
-        android:label="wego_mnn_example"
+        android:label="微购搜索"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
