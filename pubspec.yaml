@@ -1,7 +1,7 @@
 name: wego_mnn
 description: Wego mnn plugin project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/wegomnn/flutter_mnn_plugin
 
 environment:
   sdk: ">=2.16.2 <3.0.0"
