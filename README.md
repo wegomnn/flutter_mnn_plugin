@@ -1,15 +1,25 @@
-# wego_mnn
+# wego_mnn_plugin
 
-Wego mnn plugin project.
+微购推理 flutter 插件.
 
-## Getting Started
+## 发布插件版本
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+- 发布版本
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+git add *
+git commit -m 'v1.0.0'
+git tag v1.0.0
+git push
+git push origin v1.0.0
+```
+
+- 其他标签操作
+
+```
+git tag -a v1.0.0 -m '内容'
+git tag v1.0.0
+git tag -d v1.0.0
+git push origin :refs/tags/v1.0.0
+```
 
