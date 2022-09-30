@@ -17,9 +17,9 @@ git push origin v1.0.0
 - 其他标签操作
 
 ```
-git tag -a v1.0.0 -m '内容'
-git tag v1.0.0
-git tag -d v1.0.0
-git push origin :refs/tags/v1.0.0
+git tag -a 1.0.0 -m '内容'
+git tag 1.0.0
+git tag -d 1.0.0
+git push origin :refs/tags/1.0.0
 ```
 
