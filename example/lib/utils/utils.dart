@@ -1,11 +1,11 @@
 import 'dart:io';
 
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:wego_mnn_example/style/theme.dart';
 
 /// Utils 工具类
 class Utils {
+  static const bool isCompress = true; // 是否 android 层压缩图片
+
   static Future<String> getImageDir() async {
     /// getFilesDir getApplicationSupportDirectory
     /// getCacheDir getTemporaryDirectory

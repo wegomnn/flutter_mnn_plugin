@@ -84,7 +84,8 @@ class AppendLogic extends GetxController with LoadingHelperMixin {
     int now = DateTime.now().millisecondsSinceEpoch;
     for (int i = 0; i < nb; i++) {
       logger.i("_parse = " + i.toString() + " = " + _imagePaths[i]);
-      Float32List array = await WegoMnn.detect(_imagePaths[i]);
+      Float32List array =
+          await WegoMnn.detect(_imagePaths[i], Utils.isCompress);
       for (int j = 0; j < array.length; j++) {
         collection[i * size + j] = array[j];
       }

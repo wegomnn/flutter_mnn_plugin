@@ -50,7 +50,8 @@ class SearchLogic extends GetxController with LoadingHelperMixin {
   }
 
   Future<void> _parse() async {
-    Float32List target = await WegoMnn.detect(targetImagePath);
+    Float32List target =
+        await WegoMnn.detect(targetImagePath, Utils.isCompress);
     await _search(target);
   }
 

@@ -51,7 +51,8 @@ public class WegoMnnPlugin implements FlutterPlugin, MethodCallHandler {
             result.success(null);
         } else if (call.method.equals("detect")) {
             String imagePath = call.argument("imagePath");
-            float[] vector = WegoMnn.detect(imagePath);
+            boolean isCompress = call.argument("isCompress");
+            float[] vector = WegoMnn.detect(imagePath, isCompress);
             result.success(vector);
         } else if (call.method.equals("vectorClear")) {
             WegoMnn.vectorClear(applicationContext);
